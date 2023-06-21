@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Wonderful Luogu,WonLuogu,Argon++,Argon,氩洛谷,Argon Design,Luogu Design,Argon++ Design,氩++,氩洛谷++,Argon Plus Plus,氩洛谷Plus Plus">
+    <meta name="description" content="Wonderful Luogu 是一款全新的 Luogu 样式，自带深色模式，适配洛谷远古前端，有着耳目一新的感觉。">
+    <link rel="shortcut icon" href="./fav.png"/>
+    <title>Wonderful Luogu</title>
+    <link rel="stylesheet" type="text/css" href="https://gcore.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./main.css"/>
+    <script src="https://gcore.jsdelivr.net/npm/jquery" crossorigin="anonymous"></script>
+    <meta name="msvalidate.01" content="1650FB7FE3F85923E5520753E6B32667" />
+</head>
+<body style="background-color: #212121">
+
+    <div class="ui basic modal">
+        <div class="ui icon header">
+            <i class="code branch icon"></i>
+            MIT 许可证
+        </div>
+        <div class="content">
+            <p>
+                <a href="https://mit-license.org">MIT License</a><br/>
+                特此免费授予任何获得副本的人没有限制地使用这个“软件”和相关的文档文件，包括但不限于使用、复制、修改、合并、发布、分发、再许可和(或)销售该软件的副本，但必须遵守以下条件：<br/>
+                <strong>上述版权声明和本许可声明必须包含在内，以及本软件的副本或实质性部分。</strong><br/>
+                本软件按“原样”提供，不附有任何形式的明示或暗示的保证，包括但不限于对适销性的保证。在任何情况下，作者或版权持有者对任何索赔、损坏均不负任何责任，无论是在合同、民事侵权行为、本软件的使用、其他交易或其他方面。
+            </p>
+        </div>
+        <div class="actions">
+            <div class="ui green ok inverted button">
+                <i class="checkmark icon"></i>
+                确定
+            </div>
+        </div>
+    </div>
+
+    <div class="ui inverted segment">
+        <div class="ui inverted secondary pointing top fixed menu" style="box-shadow:0 6px 25px rgba(0,0,0,.5);background-color: #1c1c1c">
+            <a href="./index.html" class="item">
+            首页
+            </a>
+            <a class="active item">
+            下载
+            </a>
+            <a href="./help.html" class="item">
+            帮助
+            </a>
+        </div>
+    </div>
+
+    <div class="ui container" style="padding:30px">
+        <style>
+            .ui.text.inverted
+            {
+                color: #fff !important;
+            }
+            .or::before
+            {
+                background-color: #212121 !important;
+                color: #fff !important;
+            }
+        </style>
+        <!-- <h2 class="ui header inverted">下载必需插件 (Tampermonkey & Stylus)</h2> -->
+        <h2 class="ui header inverted">下载必需插件</h2>
+        <h3 class="ui header inverted">Chrome / Microsoft Edge / 其它 Chromium 内核浏览器</h3>
+        <p class="ui text inverted">若能够进入 Google 扩展商店，可直接搜索安装。</p>
+        <p class="ui text inverted">否则，请使用下面的 <code>.crx</code> 安装包安装。</p>
+        <!-- <a class="ui button inverted teal" href="./Tampermonkey.crx"><i class="download icon"></i> <code>Tampermonkey.crx</code></a> -->
+        <a class="ui button inverted teal" href="./img/Stylus 1.5.33.crx"><i class="download icon"></i> <code>Stylus</code></a>
+        <div class="ui warning floating message inverted">
+            <div class="header">无法通过 <code>.crx</code> 安装？</div>
+            请进入插件管理页面，勾选开发人员模式，后将 <code>.crx</code> 文件拖入到浏览器中。
+        </div>
+        <h3 class="ui header inverted">Firefox</h3>
+        <p class="ui text inverted">直接进入 Firefox 扩展应用商店安装插件。</p>
+        <!-- <a class="ui button inverted teal" target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/"><i class="plus circle icon"></i> 前去安装 Tampermonkey</a> -->
+        <a class="ui button inverted teal" target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/styl-us/"><i class="plus circle icon"></i> 前去安装 Stylus</a>
+        <div class="ui divider"></div>
+        <h2 class="ui header inverted">安装 Wonderful Luogu</h2>
+        <!-- <div class="ui positive floating message inverted">
+            <div class="header">已经有了 Tampermonkey，不想额外安装 Stylus？</div>
+            您也可以安装完整用户脚本。<br/>
+            请注意，完整用户脚本未经测试，可能更新不及时或不可用。<br/>
+            若您的所在地是中国大陆（访问 GitHub 慢），请考虑用后三个链接安装。<br/>
+            完整用户脚本会导致错误，暂时不提供下载。<br/> -->
+            <!-- <div class="ui buttons">
+                <a class="ui button inverted teal" target="_blank" href="https://raw.githubusercontent.com/argon-plus-plus/argonpp/main/main-full.user.js"><i class="code icon"></i> <code>main-full.user.js</code></a>
+                <div class="or"></div>
+                <a class="ui button inverted blue" target="_blank" href="https://raw.githubusercontents.com/argon-plus-plus/argonpp/main/main-full.user.js"><i class="code icon"></i> 7ED(githubusercontents)</a>
+                <div class="or"></div>
+                <a class="ui button inverted blue" target="_blank" href="https://ghproxy.com/raw.githubusercontent.com/argon-plus-plus/argonpp/main/main-full.user.js"><i class="code icon"></i> GitHub Proxy</a>
+                <div class="or"></div>
+                <a class="ui button inverted blue" target="_blank" href="https://gcore.jsdelivr.net/gh/argon-plus-plus/argonpp/main-full.user.js"><i class="code icon"></i> jsDelivr</a>
+            </div><br/> -->
+            <!-- 当安装完成后，便可跳过下面的安装步骤。
+        </div> -->
+        <!-- <p class="ui text inverted">先安装用户脚本，若 Tampermonkey 未被唤起，请手动复制到 Tampermonkey 中。</p>
+        <a class="ui button inverted teal" target="_blank" href="https://raw.githubusercontent.com/argon-plus-plus/argonpp/main/main.user.js"><i class="code icon"></i> <code>main.user.js</code></a>
+        <div class="ui info floating message inverted">
+            <div class="header">访问 GitHub 慢？</div>
+            若您的所在地是中国大陆，请考虑用下面的链接安装 <code>main.user.js</code>：<br/>
+            <div class="ui buttons">
+                <a class="ui button inverted blue" target="_blank" href="https://raw.githubusercontents.com/argon-plus-plus/argonpp/main/main.user.js"><i class="code icon"></i> 7ED(githubusercontents)</a>
+                <div class="or"></div>
+                <a class="ui button inverted blue" target="_blank" href="https://ghproxy.com/raw.githubusercontent.com/argon-plus-plus/argonpp/main/main.user.js"><i class="code icon"></i> GitHub Proxy</a>
+                <div class="or"></div>
+                <a class="ui button inverted blue" target="_blank" href="https://gcore.jsdelivr.net/gh/argon-plus-plus/argonpp/main.user.js"><i class="code icon"></i> jsDelivr</a>
+            </div>
+        </div> -->
+        <!-- <p class="ui text inverted">再安装样式，在 Stylus 中新建一个样式，将下面链接中内容复制到 Stylus 新建的样式内，选择覆盖导入，名称随意输入，记得保存。</p>
+        <a class="ui button inverted teal" target="_blank" href="https://raw.githubusercontent.com/argon-plus-plus/argonpp/main/mainStyle.css"><i class="code icon"></i> <code>mainStyle.css</code></a>
+        <div class="ui info floating message inverted">
+            <div class="header">访问 GitHub 慢？</div>
+            若您的所在地是中国大陆，请考虑用下面的链接安装 <code>mainStyle.css</code>：<br/>
+            <div class="ui buttons">
+                <a class="ui button inverted blue" target="_blank" href="https://raw.githubusercontents.com/argon-plus-plus/argonpp/main/mainStyle.css"><i class="code icon"></i> 7ED(githubusercontents)</a>
+                <div class="or"></div>
+                <a class="ui button inverted blue" target="_blank" href="https://ghproxy.com/raw.githubusercontent.com/argon-plus-plus/argonpp/main/mainStyle.css"><i class="code icon"></i> GitHub Proxy</a>
+                <div class="or"></div>
+                <a class="ui button inverted blue" target="_blank" href="https://gcore.jsdelivr.net/gh/argon-plus-plus/argonpp/mainStyle.css"><i class="code icon"></i> jsDelivr</a>
+            </div>
+        </div> -->
+        <p class="ui text inverted">前去下载 Wonderful Luogu：</p>
+        <a class="ui button inverted teal" target="_blank" href="https://userstyles.world/style/10506/wonderful-luogu"><i class="download icon"></i> <code>userstyles.world</code></a>
+        <p class="ui text inverted">也可前往 GitHub 下载（大陆访问慢）：</p>
+        <a class="ui button inverted teal" target="_blank" href="https://github/hellolllllin/wonluogu/releases"><i class="download icon"></i> <code>Releases</code></a>
+        <!-- 
+        <div class="ui info floating message inverted">
+            <div class="header">注意！</div>
+            在初次使用时，Tampermonkey 会弹出标签页询问是否允许跨域请求。<br/>
+            <img class="ui big image" alt="update" src="./Update.png" />
+            请选择始终同意，这样脚本就可以获取更新并及时提醒您了。<br/>
+            我们保证不会滥用该权限，再次感谢您对 Argon++ 的支持！
+        </div> -->
+
+        <h2 class="ui header inverted">至此，Wonderful Luogu 的安装工作都已完成！</h2>
+        <p class="ui text inverted">你可回到 <a href="https://www.luogu.com.cn/" target="_blank" class="ui inverted">洛谷</a> 体验样式。</p>
+
+    </div>
+
+    <div class="ui inverted vertical footer segment" style="box-shadow:0 7px 20px rgba(0,0,0,.5)">
+        <div class="ui container" >
+            <div class="ui grid inverted divided center aligned segment">
+                <div class="four wide column">
+                    <h4 class="ui header inverted">关于</h4>
+                    <div class="ui link list inverted">
+                        <a href="https://www.luogu.com.cn/user/751017" class="item">作者的洛谷主页</a>
+                        <a href="https://github.com/hellolllllin/wonluogu/releases" class="item">更新日志</a>
+                        <a href="https://www.luogu.com.cn/chat?uid=751017" class="item">反馈通道</a>
+
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui header inverted">代码</h4>
+                    <div class="ui buttons">
+                        <a class="ui inverted basic violet button" href="https://github.com/hellolllllin/wonluogu" target="_blank">参与贡献</a>
+                        <button class="ui inverted basic violet button" onclick="$('.ui.basic.modal').modal('show')">MIT 许可证</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://gcore.jsdelivr.net/npm/semantic-ui/dist/semantic.min.js"></script>
+</body>
+</html>

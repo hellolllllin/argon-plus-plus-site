@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Wonderful Luogu,WonLuogu,Argon++,Argon,氩洛谷,Argon Design,Luogu Design,Argon++ Design,氩++,氩洛谷++,Argon Plus Plus,氩洛谷Plus Plus">
+    <meta name="description" content="Wonderful Luogu 是一款全新的 Luogu 样式，自带深色模式，适配洛谷远古前端，有着耳目一新的感觉。">
+    <link rel="shortcut icon" href="./fav.png"/>
+    <title>Wonderful Luogu</title>
+    <link rel="stylesheet" type="text/css" href="https://gcore.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./main.css"/>
+    <style>
+        .ui.text.inverted
+        {
+            color: #fff !important;
+        }
+        .or::before
+        {
+            background-color: #212121 !important;
+            color: #fff !important;
+        }
+    </style>
+    <script src="https://gcore.jsdelivr.net/npm/jquery" crossorigin="anonymous"></script>
+    <meta name="msvalidate.01" content="1650FB7FE3F85923E5520753E6B32667" />
+</head>
+<body style="background-color: #212121">
+
+    <div class="ui basic modal">
+        <div class="ui icon header">
+            <i class="code branch icon"></i>
+            MIT 许可证
+        </div>
+        <div class="content">
+            <p>
+                <a href="https://mit-license.org">MIT License</a><br/>
+                特此免费授予任何获得副本的人没有限制地使用这个“软件”和相关的文档文件，包括但不限于使用、复制、修改、合并、发布、分发、再许可和(或)销售该软件的副本，但必须遵守以下条件：<br/>
+                <strong>上述版权声明和本许可声明必须包含在内，以及本软件的副本或实质性部分。</strong><br/>
+                本软件按“原样”提供，不附有任何形式的明示或暗示的保证，包括但不限于对适销性的保证。在任何情况下，作者或版权持有者对任何索赔、损坏均不负任何责任，无论是在合同、民事侵权行为、本软件的使用、其他交易或其他方面。
+            </p>
+        </div>
+        <div class="actions">
+            <div class="ui green ok inverted button">
+                <i class="checkmark icon"></i>
+                确定
+            </div>
+        </div>
+    </div>
+
+    <div class="ui inverted segment">
+        <div class="ui inverted secondary pointing top fixed menu" style="box-shadow:0 6px 25px rgba(0,0,0,.5);background-color: #1c1c1c">
+            <a class="active item">
+            首页
+            </a>
+            <a href="./download.html" class="item">
+            下载
+            </a>
+            <a href="./help.html" class="item">
+            帮助
+            </a>
+        </div>
+    </div>
+
+    <div class="ui inverted vertical masthead center aligned segment" style="box-shadow:0 7px 20px rgba(0,0,0,.5)">
+        <div class="ui text container">
+            <br/>
+            <br/>
+            <h1 class="ui header inverted large">Wonderful Luogu (原 Argon++ / 氩洛谷++)</h1>
+            <h4 class="ui header inverted">Bring you a brand new Luogu design.</h4>
+            <div class="ui inverted center aligned segment">
+                <a href="./download.html" class="ui primary button large">立即上手 <i class="icon right arrow"></i></a>
+                <a href="./help.html" class="ui violet button large">查看帮助 <i class="icon right arrow"></i></a>
+                <a class="ui inverted secondary button large" href="https://github.com/hellolllllin/wonluogu" target="_blank">GitHub 仓库 <i class="icon right arrow"></i></a>
+                <br/>
+                <br/>
+                <a href="https://userstyles.org/styles/166554/argon-design-luogu-argon-design" target="_blank" class="ui primary button large basic">原版氩洛谷 <i class="icon right arrow"></i></a>
+                <a href="https://exlg.cc" target="_blank" class="ui violet button large basic">Extend-Luogu <i class="icon right arrow"></i></a>
+                <button onclick="$('.ui.basic.modal').modal('show')" target="_blank" class="ui teal button large basic">MIT 许可证 <i class="icon right arrow"></i></button>
+            </div>
+            <br/>
+            <br/>
+        </div>
+    </div>
+
+    <div class="ui vertical stripe segment center aligned">
+        <div class="ui container grid divided segment center aligned" style="background-color: #212121">
+            <div class="row">
+                <div class="ui statistic inverted">
+                    <div class="value" id="latest-release">获取中...</div>
+                    <script>
+                        $.getJSON("https://api.github.com/repos/argon-plus-plus/argonpp/releases/latest",function(data,sta){
+                            $("#latest-release").text(data.name)
+                        })
+                    </script>
+                    <div class="label">最新版本</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ui massive rounded image">
+                    <!-- <img alt="screenshot" style="box-shadow:0 5px 30px rgba(0,0,0,.6)" src="./screenshot.png"/> -->
+                    <img alt="screenshot" style="box-shadow:0 5px 30px rgba(0,0,0,.6)" src="./img/1.png"/>
+                    <img alt="screenshot" style="box-shadow:0 5px 30px rgba(0,0,0,.6)" src="./img/2.png"/>
+                    <img alt="screenshot" style="box-shadow:0 5px 30px rgba(0,0,0,.6)" src="./img/3.png"/>
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="ui inverted header">为什么选择 Wonderful Luogu？</h2>
+                <div class="ui container grid divided center aligned segment" style="background-color: #212121">
+                    <div class="four wide column">
+                        <h2 class="ui header inverted">
+                            <i class="thumbs up icon"></i>
+                            <div class="content">
+                                界面精美
+                                <div class="sub header">好看的界面使您无心卷题，走向颓废之路。</div>
+                            </div>
+                        </h2>
+                    </div>
+                    <div class="four wide column">
+                        <h2 class="ui header inverted">
+                            <i class="file code icon"></i>
+                            <div class="content">
+                                自己定义
+                                <div class="sub header">可定义性高，自由选择颜色、壁纸等，使您爱上水谷。</div>
+                            </div>
+                        </h2>
+                    </div>
+                    <div class="four wide column">
+                        <h2 class="ui header inverted">
+                            <i class="calendar check icon"></i>
+                            <div class="content">
+                                开发活跃
+                                <div class="sub header">开发者及社区贡献活跃，使您动身加入其中，走向 AFO 之路。</div>
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+                <a href="./download.html" class="ui inverted teal button big"><i class="download icon"></i> 立即下载</a>
+            </div>
+            <div class="row">
+                <!-- <h2 class="ui header inverted">Developers & Special Thanks</h2>
+                <div class="ui container relaxed divided list segment" style="background-color: #212121;">
+                    <div class="item">
+                        <div class="content">
+                            <a class="header" href="https://hellolin.cf">Hellolin</a>
+                            <div class="ui text inverted description">主要开发者</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <a class="header" href="https://userstyles.org/styles/166554/argon-design-luogu-argon-design">Argon Luogu 氩洛谷</a>
+                            <div class="ui text inverted description">设计灵感、设计原型</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <a class="header" href="https://tampermonkey.net">Tampermonkey 油猴</a>
+                            <div class="ui text inverted description">用户代码脚本管理</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <a class="header" href="https://userstyles.world/">Stylus</a>
+                            <div class="ui text inverted description">样式管理</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <a class="header" href="https://www.luogu.com.cn">Luogu 洛谷</a>
+                            <div class="ui text inverted description">平台提供</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <a class="header" href="https://github.com">GitHub</a>
+                            <div class="ui text inverted description">平台提供</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <a class="header" href="https://code.visualstudio.com/">Visual Studio Code</a>
+                            <div class="ui text inverted description">工具提供</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <a class="header" href="javascript:$('.ui.basic.modal').modal('show')">MIT License</a>
+                            <div class="ui text inverted description">开源协议</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <a class="header" href="https://semantic-ui.com">Semantic UI</a>
+                            <div class="ui text inverted description">官网 UI 框架</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <a class="header" href="https://vercel.com">Vercel</a>
+                            <div class="ui text inverted description">官网托管</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="header ui text inverted"><strong>...and you!</strong></div>
+                            <div class="ui text inverted description">感谢您的支持与贡献！</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <div class="ui inverted vertical footer segment" style="box-shadow:0 7px 20px rgba(0,0,0,.5)">
+        <div class="ui container" >
+            <div class="ui grid inverted divided center aligned segment">
+                <div class="four wide column">
+                    <h4 class="ui header inverted">关于</h4>
+                    <div class="ui link list inverted">
+                        <a href="https://www.luogu.com.cn/user/751017" class="item">作者的洛谷主页</a>
+                        <a href="https://github.com/hellolllllin/wonluogu/releases" class="item">更新日志</a>
+                        <a href="https://www.luogu.com.cn/chat?uid=751017" class="item">反馈通道</a>
+
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui header inverted">代码</h4>
+                    <div class="ui buttons">
+                        <a class="ui inverted basic violet button" href="https://github.com/hellolllllin/wonluogu" target="_blank">参与贡献</a>
+                        <button class="ui inverted basic violet button" onclick="$('.ui.basic.modal').modal('show')">MIT 许可证</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://gcore.jsdelivr.net/npm/semantic-ui/dist/semantic.min.js"></script>
+</body>
+</html>
